@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HerokuApp Cross-Platform Suite" verbose="1" parallel="tests" thread-count="3">
+
+    <test name="Chrome Windows Test">
+        <!-- FIXED: Specifying valid supported cross-platform parameters -->
+        <parameter name="os" value="Windows" />
+        <parameter name="osVersion" value="11" />
+        <parameter name="browserName" value="Chrome" />
+        <parameter name="browserVersion" value="latest" />
+        <classes>
+            <class name="herokuapp.herokuapptestcase" />
+        </classes>
+    </test>
+
+<!--    &lt;!&ndash; Environment 1: Apple iPad 9th Gen &ndash;&gt;-->
+<!--    <test name="iPad 8th Generation">-->
+<!--        <parameter name="platformType" value="mobile"/>-->
+<!--        <parameter name="device" value="iPad 8th"/>-->
+<!--        <parameter name="osVersion" value="16"/>-->
+<!--        <parameter name="browserName" value="safari"/>-->
+<!--        <parameter name="browserVersion" value="none"/>-->
+<!--        <classes>-->
+<!--            <class name="herokuapp.herokuapptestcase"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    &lt;!&ndash; Environment 2: OnePlus 12R &ndash;&gt;-->
+<!--    <test name="OnePlus 12R Android">-->
+<!--        <parameter name="platformType" value="mobile"/>-->
+<!--        <parameter name="device" value="OnePlus 12R"/>-->
+<!--        <parameter name="osVersion" value="14.0"/>-->
+<!--        <parameter name="browserName" value="chrome"/>-->
+<!--        <parameter name="browserVersion" value="none"/>-->
+<!--        <classes>-->
+<!--            <class name="herokuapp.herokuapptestcase"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    &lt;!&ndash; Environment 3: Windows Chrome 158 &ndash;&gt;-->
+<!--    <test name="Windows 11 Chrome 158">-->
+<!--        <parameter name="platformType" value="desktop"/>-->
+<!--        <parameter name="device" value=""/>-->
+<!--        <parameter name="os" value="Windows"/>-->
+<!--        <parameter name="osVersion" value="11"/>-->
+<!--        <parameter name="browserName" value="chrome"/>-->
+<!--        <parameter name="browserVersion" value="latest"/>-->
+<!--        <classes>-->
+<!--            <class name="herokuapp.herokuapptestcase"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+</suite>

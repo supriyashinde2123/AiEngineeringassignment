@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+
+    environment {
+        // Securely binds global environment variables to your exact uppercase Jenkins credential entries
+        BROWSERSTACK_USERNAME   = credentials('BROWSERSTACK_USERNAME')
+        BROWSERSTACK_ACCESS_KEY = credentials('BROWSERSTACK_ACCESS_KEY')
+    }
+
+    stages {
+        stage('Validate Credentials') {
+            steps {
+                script {
+                    if (!env.BROWSERSTACK_USERNAME || !env.BROWSERSTACK_ACCESS_KEY) {
+                        error "Missing Credentials: Ensure BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY are accurately configured in Jenkins global credentials."
+                    }
+                }
+            }
+        }
+
+        stage('Execute Test Suite') {
+            steps {
+                // Triggers TestNG via Maven command using the test code's built-in @Optional defaults
+                bat "mvn clean test"
+            }
+
+            post {
+                always {
+                    // Parses Surefire reports and archives automation artifacts within the context of the running workspace node
+                    junit '**/target/surefire-reports/*.xml'
+                    archiveArtifacts artifacts: '**/target/surefire-reports/**/*', fingerprint: true
+                }
+            }
+        }
+    }
+}
