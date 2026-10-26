@@ -1,0 +1,13 @@
+{
+  "id" : "f9d30e6e-6498-4a16-83b8-ea85895c49bf",
+  "request" : {
+    "urlPath" : "/payment/1",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"id\":1,\"status\":\"PAID\"}",
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "f9d30e6e-6498-4a16-83b8-ea85895c49bf"
+}

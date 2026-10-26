@@ -1,0 +1,8 @@
+request:
+  method: GET
+  url: /payment/1
+response:
+  status: 200
+  body:
+    id: 1
+    status: PAID
