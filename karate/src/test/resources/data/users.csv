@@ -1,0 +1,3 @@
+id,name,username,shouldMatch
+1,Leanne Graham,Bret,TRUE
+2,Leanne Graham,Brets,FALSE

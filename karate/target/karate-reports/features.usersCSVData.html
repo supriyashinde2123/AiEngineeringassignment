@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"dfa13096-65d0-4823-a898-ca900f77318a",karate_version:"1.5.2",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.usersCSVData</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-10-27 05:18:30 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:14]"><span>[1.1:14]</span> <span>Get user 1 - username Bret, match=&lt;shouldMatch</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.2:14]"><span>[1.2:14]</span> <span>Get user 2 - username Brets, match=&lt;shouldMatch</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/usersCSVData.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get User</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:14]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:14]</span>
+                <span class="scenario-name">Get user 1 - username Bret, match=&lt;shouldMatch</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>248</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:14]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;, id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">210</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.8">17:18:29.951 request:
+1 &gt; GET https://jsonplaceholder.typicode.com/users/1
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+17:18:30.157 response time in milliseconds: 204
+1 &lt; 200
+1 &lt; Date: Tue, 27 Oct 2026 11:49:44 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; Cache-Control: max-age=43200
+1 &lt; etag: W/&quot;1fd-+2Y3G3w049iSZtw5t1mzSnunngE&quot;
+1 &lt; expires: -1
+1 &lt; pragma: no-cache
+1 &lt; vary: Origin, Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 3600000
+1 &lt; x-ratelimit-remaining: 3599998
+1 &lt; x-ratelimit-reset: 1790812826
+1 &lt; Age: 19599
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=tR%2B8jqF4ut%2Bj1h7GZFx4QihtoEtM5UxqzcxxnYdRyrULIo4CTuvkTmkOrtETNWVPoVuZ9dk1Rt8QmjZXJo3yLI8AbBl%2BpLIqRMv2M%2B06d6G9xGa%2FugC5VzYXQkVMXdhcPCDN01pOJCLW4m1KJnX3&quot;}]}
+1 &lt; cf-cache-status: HIT
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;HIT&quot;
+1 &lt; Server-Timing: cfEdge;dur=10,cfOrigin;dur=0
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: a5117aa72efffdcc-SIN
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;id&quot;: 1,
+  &quot;name&quot;: &quot;Leanne Graham&quot;,
+  &quot;username&quot;: &quot;Bret&quot;,
+  &quot;email&quot;: &quot;Sincere@april.biz&quot;,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;Kulas Light&quot;,
+    &quot;suite&quot;: &quot;Apt. 556&quot;,
+    &quot;city&quot;: &quot;Gwenborough&quot;,
+    &quot;zipcode&quot;: &quot;92998-3874&quot;,
+    &quot;geo&quot;: {
+      &quot;lat&quot;: &quot;-37.3159&quot;,
+      &quot;lng&quot;: &quot;81.1496&quot;
+    }
+  },
+  &quot;phone&quot;: &quot;1-770-736-8031 x56442&quot;,
+  &quot;website&quot;: &quot;hildegard.org&quot;,
+  &quot;company&quot;: {
+    &quot;name&quot;: &quot;Romaguera-Crona&quot;,
+    &quot;catchPhrase&quot;: &quot;Multi-layered client-server neural-net&quot;,
+    &quot;bs&quot;: &quot;harness real-time e-markets&quot;
+  }
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.name == name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def result = karate.match(&#39;response.username == username&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert result.pass == (shouldMatch == &#39;TRUE&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:14]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:14]</span>
+                <span class="scenario-name">Get user 2 - username Brets, match=&lt;shouldMatch</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>246</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:14]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;, id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">244</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.8">17:18:30.197 request:
+1 &gt; GET https://jsonplaceholder.typicode.com/users/2
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+17:18:30.436 response time in milliseconds: 238
+1 &lt; 200
+1 &lt; Date: Tue, 27 Oct 2026 11:49:44 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; Cache-Control: max-age=43200
+1 &lt; etag: W/&quot;1fd-XTG63SYhaP/Uo6/vgmARnL3rpBk&quot;
+1 &lt; expires: -1
+1 &lt; pragma: no-cache
+1 &lt; vary: Origin, Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 3600000
+1 &lt; x-ratelimit-remaining: 3599994
+1 &lt; x-ratelimit-reset: 1790812826
+1 &lt; Age: 5513
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=XiP5aZfGWIFYMBCoRRvHIPYwSwKw9ca8jA2nnEB9bAqjTi1dTvqkPXlFruQ6onzHPGUSXXaxrXe%2B4wxLwUXb7nZJxoMbhDTJ9YBAN5xz1xZ%2FX5Lhp%2BIgT3Lo07t14zdsrCCnorpkFqupQTMSR4a9&quot;}]}
+1 &lt; cf-cache-status: HIT
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;HIT&quot;
+1 &lt; Server-Timing: cfEdge;dur=10,cfOrigin;dur=0
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: a5117aa8cd0f7e8d-SIN
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;id&quot;: 2,
+  &quot;name&quot;: &quot;Ervin Howell&quot;,
+  &quot;username&quot;: &quot;Antonette&quot;,
+  &quot;email&quot;: &quot;Shanna@melissa.tv&quot;,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;Victor Plains&quot;,
+    &quot;suite&quot;: &quot;Suite 879&quot;,
+    &quot;city&quot;: &quot;Wisokyburgh&quot;,
+    &quot;zipcode&quot;: &quot;90566-7771&quot;,
+    &quot;geo&quot;: {
+      &quot;lat&quot;: &quot;-43.9509&quot;,
+      &quot;lng&quot;: &quot;-34.4618&quot;
+    }
+  },
+  &quot;phone&quot;: &quot;010-692-6593 x09125&quot;,
+  &quot;website&quot;: &quot;anastasia.net&quot;,
+  &quot;company&quot;: {
+    &quot;name&quot;: &quot;Deckow-Crist&quot;,
+    &quot;catchPhrase&quot;: &quot;Proactive didactic contingency&quot;,
+    &quot;bs&quot;: &quot;synergize scalable supply-chains&quot;
+  }
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.name == name</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.10">17:18:30.441 classpath:features/usersCSVData.feature:10
+And match response.name == name
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  &#39;Ervin Howell&#39;
+  &#39;Leanne Graham&#39;
+
+classpath:features/usersCSVData.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref skipped">11</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def result = karate.match(&#39;response.username == username&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.12">
+      <div class="step-ref skipped">12</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>assert result.pass == (shouldMatch == &#39;TRUE&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
