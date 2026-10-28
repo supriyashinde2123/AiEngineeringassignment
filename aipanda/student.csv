@@ -1,0 +1,20 @@
+rollno,name,attendence_percentage,unittest_1_marks,unittest_2_marks
+101,Aarav Sharma,85.5,22,21
+102,Diya Patel,92.0,24,23
+103,Vivaan Iyer,78.3,18,19
+104,Ananya Reddy,95.1,25,24
+105,Kabir Malhotra,88.0,20,22
+106,Ishaan Verma,64.2,14,15
+107,Meera Joshi,91.5,23,21
+108,Rohan Das,83.0,19,20
+109,Sanya Kapoor,79.8,17,18
+110,Arjun Nair,96.4,25,24
+111,Test Duplicate A,80.0,20,20
+111,Test Duplicate B,82.0,21,19
+111,Test Duplicate C,84.0,22,18
+112,Missing Attendance,,20,21
+113,Missing Unit Test 1,88.0,,20
+114,Missing Unit Test 2,90.0,23,
+115,Invalid Attendance A,101.0,20,20
+116,Invalid Attendance B,120.0,22,21
+117,Invalid Attendance C,150.0,18,19
